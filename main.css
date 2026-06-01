@@ -1,4 +1,10 @@
+html {
+	background-color: purple;
+}
 .title {
-	color: red;
+	color: white;
 	text-align: center;
+}
+.description {
+	color:white;
 }
