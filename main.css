@@ -5,13 +5,13 @@
 }
 
 html {
-	background-image: linear-gradient(to bottom right, #3399ff, #9966ff);
+	background-image: linear-gradient(to bottom right, #3399ff, #6600cc);
 }
 .title {
 	color: white;
 	font-family: Coiny;
 	text-align: center;
-	font-size: 40px;
+	font-size: 28px;
 }
 .description {
 	font-family: Concert One;
@@ -21,23 +21,39 @@ html {
 }
 
 .button {
+	transition-duration: 0.4s;
 	margin:auto;
 	background-image: linear-gradient(to bottom right, #3399ff, #9966ff);
 	color: white;
 	font-style: bold;
 	margin: 20px;
-	width: 200px;
-	height: 200px;
+	width: 220px;
+	height: 180px;
 	text-align: center;
 	font-size: 50px;
 	font-family: Coiny;
-	align-items: center;
-	border-radius: 5;
+	align-items: justify;
+	border-radius: 45px;
+	border-width: 15px;
+	border-color: white;
+	border-style: solid;
+}
+
+.button:hover{
+	border-width: 0px;
+	border-radius: 30px;
+}
+
+.button:focus{
+	border-width: 0px;
+	border-radius: 30px;
 }
 
 .button-container {
 	align-items: center;
 	background-color: white;
 	padding: 10px;
-	border-radius: 5px;
+	margin-left: 40px;
+	margin-right: 40px;
+	border-radius: 30px;
 }
