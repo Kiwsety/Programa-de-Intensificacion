@@ -9,10 +9,15 @@ html {
 }
 .title {
 	color: white;
+	font-family: Coiny;
 	text-align: center;
+	font-size: 40px;
 }
 .description {
-	color:white;
+	font-family: Concert One;
+	text-align: center;
+	color: #3366ff;
+	font-size: 24px;
 }
 
 .button {
@@ -20,9 +25,12 @@ html {
 	background-image: linear-gradient(to bottom right, #3399ff, #9966ff);
 	color: white;
 	font-style: bold;
-	width: 100px;
-	height: 100px;
+	margin: 20px;
+	width: 200px;
+	height: 200px;
 	text-align: center;
+	font-size: 50px;
+	font-family: Coiny;
 	align-items: center;
 	border-radius: 5;
 }
