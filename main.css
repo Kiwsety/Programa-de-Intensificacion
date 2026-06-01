@@ -1,5 +1,11 @@
+:root {
+	--light-purple: #9966ff;
+	--light-blue: #3399ff;
+	--bg-gradient: linear-gradient(to bottom right, #3399ff, #9966ff);
+}
+
 html {
-	background-image: linear-gradient(to bottom right, blue, purple);
+	background-image: linear-gradient(to bottom right, #3399ff, #9966ff);
 }
 .title {
 	color: white;
@@ -10,13 +16,20 @@ html {
 }
 
 .button {
-	background-image: linear-gradient(to bottom right, blue, purple);
-	color: purple;
-	width: 100;
-	height: 100;
+	margin:auto;
+	background-image: linear-gradient(to bottom right, #3399ff, #9966ff);
+	color: white;
+	font-style: bold;
+	width: 100px;
+	height: 100px;
 	text-align: center;
+	align-items: center;
+	border-radius: 5;
 }
 
 .button-container {
+	align-items: center;
 	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
 }
