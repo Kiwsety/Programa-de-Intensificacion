@@ -75,6 +75,10 @@ html {
 	transition: all 0.4s ease;
 }
 
+.image {
+	display: flex;
+}
+
 .guide {
 	align-items: center;
 	background-color: white;
