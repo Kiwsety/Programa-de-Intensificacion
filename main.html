@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coiny">
 	<link rel="stylesheet" href="main.css">
+	<script src="main.js" defer> </script>
 </head>
 
 <body>
@@ -23,26 +24,28 @@
 		</div>
 		
 		<div class="button-container">
-			<button class="button" id="1-year"> 1° </button>
-			<button class="button" id="2-year"> 2° </button>
-			<button class="button" id="3-year"> 3° </button>
-			<button class="button" id="4-year"> 4° </button>
-			<button class="button" id="5-year"> 5° </button>
+			<button class="button" onclick="YearSelected(1)"> 1° </button>
+			<button class="button"> 2° </button>
+			<button class="button"> 3° </button>
+			<button class="button"> 4° </button>
+			<button class="button"> 5° </button>
 			<button class="button"> 6° </button>
 		</div>
 	</div>
 	
 	<div id="subjects" class="container">
+		<div class="description">
 		<p> Selecciona la materia que adeudas. </p>
+		</div>
 		<div class="button-container">
-			<button class="button"> Matematicas </button>
-			<button class="button"> C.Sociales </button>
-			<button class="button"> C.Naturales </button>
-			<button class="button"> Lengua </button>
-			<button class="button"> Ciudadania </button>
-			<button class="button"> Musica </button>
-			<button class="button"> Artistica </button>
-			<button class="button"> Ed.Fisica </button>
+			<button id="subject-button1" class="button"> Matematicas </button>
+			<button id="subject-button2" class="button"> C.Sociales </button>
+			<button id="subject-button3" class="button"> C.Naturales </button>
+			<button id="subject-button4" class="button"> Lengua </button>
+			<button id="subject-button5" class="button"> Ciudadania </button>
+			<button id="subject-button6" class="button"> Musica </button>
+			<button id="subject-button7" class="button"> Artistica </button>
+			<button id="subject-button8" class="button"> Ed.Fisica </button>
 		</div>
 	</div>
 	
