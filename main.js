@@ -9,7 +9,7 @@ const year6 = ["Matematica","Lengua","Fisicoquimica"]
 
 let i;
 let page = 0;
-let maxPages = 1;
+let maxPages = 3;
 
 function yearSelected(year) {
 	switch (year) {
@@ -50,6 +50,7 @@ function setupButtons(subjects){
 			document.getElementById("subject-button"+(i+1)).disabled = true;
 		}
 	}
+	document.getElementById("page-number").innerText = (page+1)+"/"+maxPages;
 }
 
 
@@ -62,10 +63,11 @@ function changePage(side){
 	}
 	else {
 		page -= 1;
-		if (page <= 0) {
+		if (page < 0) {
 			page = maxPages-1;
 		}
 	}
+	document.getElementById("page-number").innerText = (page+1)+"/"+maxPages;
 }	
 	
 	//page change script functionality later

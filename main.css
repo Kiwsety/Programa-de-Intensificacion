@@ -76,7 +76,35 @@ html {
 }
 
 .image {
-	display: flex;
+	display: normal;
+}
+
+
+.page-button{
+	transition: all 0.4s ease;
+	
+	margin: 5px;
+	background-image: linear-gradient(to bottom right, #3399ff, #9966ff);
+	
+	color: white;
+	
+	width: 50px;
+	height: 50px;
+	
+	white-space: nowrap;
+	
+	text-align: center;
+	font-size: 22px;
+	
+	border-radius: 10px;
+	border-width: 5px;
+	border-color: white;
+	border-style: solid;
+}
+
+.page-button:hover {
+	border-width: 0px;
+	border-radius: 10px;
 }
 
 .guide {
