@@ -30,7 +30,7 @@ html {
 	height: 140px;
 	
 	text-align: center;
-	font-size: 26px;
+	font-size: 22px;
 	
 	border-radius: 30px;
 	border-width: 15px;
@@ -47,6 +47,7 @@ html {
 .container {	
 	background-color: white;
 	padding: 10px;
+	margin-bottom: 20px;
 	margin-left: 40px;
 	margin-right: 40px;
 	border-radius: 30px;
