@@ -7,6 +7,8 @@
 html {
 	background-image: linear-gradient(to bottom right, #3399ff, #6600cc);
 }
+
+
 .title {
 	color: white;
 	text-align: center;
@@ -18,16 +20,18 @@ html {
 	font-size: 24px;
 }
 
-.button {
-	transition-duration: 0.4s;
+.button{
+	transition: all 0.4s ease;
 	
-	margin:2px;
+	margin: 5px;
 	background-image: linear-gradient(to bottom right, #3399ff, #9966ff);
 	
 	color: white;
-
+	
 	width: 180px;
 	height: 140px;
+	
+	white-space: nowrap;
 	
 	text-align: center;
 	font-size: 22px;
@@ -43,6 +47,15 @@ html {
 	border-radius: 30px;
 }
 
+.button:disabled {
+	width: 0px;
+	height: 0px;
+	padding: 0px;
+	margin: 0px;
+	font-size: 0px;
+	border-width: 0px;
+	
+}
 
 .container {	
 	background-color: white;
@@ -54,8 +67,12 @@ html {
 }
 
 .button-container {
+	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
-	justify-content: justify;
+	justify-content: center;
+	
+	transition: all 0.4s ease;
 }
 
 .guide {
