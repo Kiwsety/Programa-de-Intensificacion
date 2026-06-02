@@ -9,12 +9,10 @@ html {
 }
 .title {
 	color: white;
-	font-family: Coiny;
 	text-align: center;
 	font-size: 28px;
 }
 .description {
-	font-family: Concert One;
 	text-align: center;
 	color: #3366ff;
 	font-size: 24px;
@@ -22,17 +20,19 @@ html {
 
 .button {
 	transition-duration: 0.4s;
-	margin:auto;
+	
+	margin:2px;
 	background-image: linear-gradient(to bottom right, #3399ff, #9966ff);
+	
 	color: white;
-	font-style: bold;
-	width: 200px;
-	height: 180px;
+
+	width: 180px;
+	height: 140px;
+	
 	text-align: center;
-	font-size: 50px;
-	font-family: Coiny;
-	align-items: justify;
-	border-radius: 45px;
+	font-size: 26px;
+	
+	border-radius: 30px;
 	border-width: 15px;
 	border-color: white;
 	border-style: solid;
@@ -43,18 +43,18 @@ html {
 	border-radius: 30px;
 }
 
-.button:focus {
-	border-width: 0px;
-	border-radius: 30px;
-}
 
-.button-container {
-	align-items: center;
+.container {	
 	background-color: white;
 	padding: 10px;
 	margin-left: 40px;
 	margin-right: 40px;
 	border-radius: 30px;
+}
+
+.button-container {
+	align-items: center;
+	justify-content: justify;
 }
 
 .guide {
@@ -68,7 +68,9 @@ html {
 	margin-right: 130px;
 	border-radius: 30px;
 	
-	font-family: Coiny;
+	font-size: 18px;
+	text-align: center;
+	
 	color: #9966ff
 }
 
