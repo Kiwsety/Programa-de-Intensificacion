@@ -1,52 +1,61 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coiny">
-<link rel="stylesheet" href="main.css">
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coiny">
+	<link rel="stylesheet" href="main.css">
+</head>
 
-<div class="title">
-	<h1> Programa de Intensificación </h1>
-	<h3> Repositorio de materias adeudadas a Intensificar o dar Equivalencia. </h3>
+<body>
+	<div class="title">
+		<h1> Programa de Intensificación </h1>
+		<h3 id="subtitle"> Repositorio de materias adeudadas a Intensificar o dar Equivalencia. </h3>
+	</div>
 
-</div>
 
-<justify>
-<div class="button-container">
+	<center>
+	
+	<div class="container">
 
-	<div class="description"> 
-		<p> Sistema de intensificación para estudiantes. <br>
-		Seleccioná tu año.</p>
+		<div class="description"> 
+			<p> Sistema de intensificación para estudiantes. <br>
+			Seleccioná tu año.</p>
+		</div>
+		
+		<div class="button-container">
+			<button class="button" id="1-year"> 1° </button>
+			<button class="button" id="2-year"> 2° </button>
+			<button class="button" id="3-year"> 3° </button>
+			<button class="button" id="4-year"> 4° </button>
+			<button class="button" id="5-year"> 5° </button>
+			<button class="button"> 6° </button>
+		</div>
+	</div>
+
+	<div id="subjects" class="button-container">
+		<button class="button"> Matematicas </button>
+		<button class="button"> C.Sociales </button>
+		<button class="button"> C.Naturales </button>
+		<button class="button"> Lengua </button>
+		<button class="button"> Ciudadania </button>
+		<button class="button"> Musica </button>
+		<button class="button"> Artistica </button>
+		<button class="button"> Ed.Fisica </button>
+	</div>
+	</center>
+
+	<div class="guide">
+		<p> ¿Cómo funciona?
+		Los profesores envían las actividades a un correo. 
+		Nuestro equipo las organiza y las posiciona en su lugar correspondiente.
+		Vos solo tenés que seleccionar tu año, elegir una materia y acceder a todo. </p>
+	</div>
+
+	<div class="credits">
+		<p> Danill Kryvulia 
+			Dylan Gimenez  </p>
 	</div>
 	
-	<button class="button" id="1-year"> 1° </button>
-	<button class="button" id="2-year"> 2° </button>
-	<button class="button" id="3-year"> 3° </button>
-	<button class="button" id="4-year"> 4° </button>
-	<button class="button" id="5-year"> 5° </button>
-	<button class="button" id="6-year"> 6° </button>
-</div>
-
-<div id="materias-1" class="materias">
-	<button> Matematicas </button>
-	<button> C.Sociales </button>
-	<button> C.Naturales </button>
-	<button> Lengua </button>
-	<button> Ciudadania </button>
-	<button> Musica </button>
-	<button> Artistica </button>
-	<button> Ed.Fisica </button>
-</div>
 	
-
-<div class="guide">
-	<p> ¿Cómo funciona?
-	Los profesores envían las actividades a un correo. 
-	Nuestro equipo las organiza y las posiciona en su lugar correspondiente.
-	Vos solo tenés que seleccionar tu año, elegir una materia y acceder a todo. </p>
-</div>
-
-<div class="credits">
-	<p> Danill Kryvulia 
-		Dylan Gimenez  </p>
-</div>
+</hody>
 </html>
