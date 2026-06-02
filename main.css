@@ -26,8 +26,7 @@ html {
 	background-image: linear-gradient(to bottom right, #3399ff, #9966ff);
 	color: white;
 	font-style: bold;
-	margin: 20px;
-	width: 220px;
+	width: 200px;
 	height: 180px;
 	text-align: center;
 	font-size: 50px;
@@ -39,12 +38,12 @@ html {
 	border-style: solid;
 }
 
-.button:hover{
+.button:hover {
 	border-width: 0px;
 	border-radius: 30px;
 }
 
-.button:focus{
+.button:focus {
 	border-width: 0px;
 	border-radius: 30px;
 }
@@ -56,4 +55,34 @@ html {
 	margin-left: 40px;
 	margin-right: 40px;
 	border-radius: 30px;
+}
+
+.guide {
+	align-items: center;
+	background-color: white;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 40px;
+	margin-left: 130px;
+	margin-right: 130px;
+	border-radius: 30px;
+	
+	font-family: Coiny;
+	color: #9966ff
+}
+
+.credits {
+	align-items: center;
+	background-color: white;
+	padding: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 40px;
+	
+	font-size: 12px;
+	
+	outline-style: solid;
+	outline-width: 20px;
+	outline-color: white;
 }
