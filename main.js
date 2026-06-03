@@ -130,7 +130,7 @@ function setupContainers() {
 		result = "0001";
 	}
 	console.log("year"+currentYear+" orientation"+currentOrientation+" subject"+currentSubject);
-	numToVisibility("year",result[0])
+	numToVisibility("years",result[0])
 	numToVisibility("orientation",result[1])
 	numToVisibility("subjects",result[2])
 	numToVisibility("image-container",result[3])
