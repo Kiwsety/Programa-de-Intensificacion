@@ -24,7 +24,6 @@ function yearSelected(year) {
 	currentYear = year;
 	currentOrientation = 0;
 	currentSubject = 0;
-	setupContainers();
 	switch (year) {
 		case 1:
 			setupButtons(year1);
@@ -36,12 +35,12 @@ function yearSelected(year) {
 			setupButtons(year3);
 			break;
 	}
+	setupContainers();
 }
 
 function orientationSelected(_orientation) {
 	currentOrientation = _orientation;
 	currentSubject = 0;
-	setupContainers();
 	switch (_orientation) {
 		case 1:
 			switch (currentYear) {
@@ -83,6 +82,7 @@ function orientationSelected(_orientation) {
 			}
 			break;
 	}
+	setupContainers();
 }
 
 function subjectSeleceted(_subject){
@@ -109,40 +109,57 @@ function setupButtons(subjects){
 }
 
 function setupContainers() { //for single orientation
-	if (currentYear <= 3) {
-		if (currentSubject == 0){
-			document.getElementById("subjects").disabled = false;
-		}
-		else {
-			document.getElementById("subjects").disabled = true;
-			if (currentSubject == 0){
-				document.getElementById("image-container").disabled = false;
+	let result
+	if (currentSubject == 0) {
+		if (currentOrientation == 0 && currentYear > 3){
+			if (currentYear == 0){
+				result = "1000";
 			}
 			else {
-				document.getElementById("image-container").disabled = true;
+				result = "0100";
 			}
 		}
-
+		else if (currentYear != 0){
+			result = "0010";
+		}
+		else {
+			result = "1000";
+		}
 	}
-	else if (currentYear > 3) { //for orientable years
-		document.getElementById("orientation").disabled = false;
-		
-		if (currentOrientation == 0){
-			document.getElementById("subjects").disabled = false;
-		}
-		else {
-			document.getElementById("subjects").disabled = true;
-			
-			if (currentSubject == 0){
-				document.getElementById("image-container").disabled = true;
-			}
-			else {
-				document.getElementById("image-container").disabled = false;
-			}
-		}
+	else {
+		result = "0001";
+	}
+	console.log("year"+currentYear+" orientation"+currentOrientation+" subject"+currentSubject);
+	numToVisibility("orientation",result[1])
+	numToVisibility("subjects",result[2])
+	numToVisibility("image-container",result[3])
+}
+
+function numToVisibility(who,num){
+	if (num == 1) {
+		document.getElementById(who).hidden = false;
+	}
+	else {
+		document.getElementById(who).hidden = true;
 	}
 }
 
+function backPressed() {	
+	if (currentSubject > 0) {
+		currentSubject = 0;
+	}
+	else {
+		if (currentOrientation > 0){
+			currentOrientation = 0;
+		}
+		else {
+			if (currentYear > 0){
+				currentYear = 0;
+			}
+		}
+	}
+		setupContainers();
+}
 
 function changePage(side){
 	if (side == 1) {
