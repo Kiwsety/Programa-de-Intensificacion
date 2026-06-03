@@ -47,16 +47,6 @@ html {
 	border-radius: 30px;
 }
 
-.button:disabled {
-	width: 0px;
-	height: 0px;
-	padding: 0px;
-	margin: 0px;
-	font-size: 0px;
-	border-width: 0px;
-	
-}
-
 .container {	
 	background-color: white;
 	padding: 10px;
@@ -163,3 +153,4 @@ html {
 .back-button:hover {
 	border-width: 0px;
 	border-radius: 10px;
+}
