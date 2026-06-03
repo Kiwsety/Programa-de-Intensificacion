@@ -1,15 +1,31 @@
-const year1 = ["Matematica","Lengua","C. Naturales","C. Sociales","Ciudadania","Artistica","Ed. Fisica"];
-const year2 = ["Matematica","Lengua","Fisicoquimica","Biologia","Geografia","Historia","Ciudadania","Artistica","Ed. Fisica"];
-const year3 = ["Matematica","Lengua","Fisicoquimica","Biologia","Geografia","Historia","Ciudadania","Artistica","Ed. Fisica"];
-const year41 = ["Matematica","Lengua","Fisicoquimica","Biologia","Geografia","Historia"];
-const year42 = ["Matematica","Lengua"];
-const year43 = ["Matematica","Lengua","Fisicoquimica"];
-const year51 = ["Matematica","Lengua","C. Naturales","C. Sociales","Ciudadania","Artistica","Ed. Fisica"];
-const year52 = ["Matematica"];
-const year53 = ["Matematica","Lengua","Fisicoquimica","Biologia","Geografia","Historia","Ciudadania","Artistica","Ed. Fisica"];
-const year61 = ["Matematica","Lengua","Fisicoquimica","Biologia","Geografia","Historia"];
-const year62 = ["Matematica","Lengua","SIC"];
-const year63 = ["Matematica","Lengua","Fisicoquimica","GEO"];
+const year1 = ["C. Naturales", "C. Sociales", "Ciudadania", "Ingles", "Lengua", "Matematica", "Musica", "Plastica", "Teatro", "Ed. Fisica"];
+const year2 = ["Biologia", "Ciudadania", "Fisicoquimica", "Geografia", "Historia", "Ingles", "Lengua", "Matematica", "Musica", "Plastica", "Teatro", "Ed. Fisica"];
+const year3 = ["Biologia", "Ciudadania", "Fisicoquimica", "Geografia", "Historia", "Ingles", "Literatura", "Matematica", "Musica", "Plastica", "Ed. Fisica"];
+
+const year41 = ["Biologia", "Fisica", "Geografia", "Historia", "Ingles", "Literatura", "Matematica", "NCTIX", "SIC", "Sado", "TEO", "Ed. Fisica"];
+const year42 = ["Biologia", "Fisica", "Geografia", "Historia", "Ingles", "Literatura", "Matematica", "NCTIX", "Psicologia", "Sado", "Ed. Fisica"];
+const year43 = ["Biologia", "Fisica", "Geografia", "Historia", "Ingles", "Literatura", "Matematica", "NTIX", "Quimica", "Sado", "Ed. Fisica"];
+
+const year51 = ["Derecho", "Micro y Macro", "Geografía", "GEO", "Historia", "Ingles", "Química", "Literatura", "Matematica", "Pol. y Ciudadanía", "SIC", "Ed. Fisica"];
+const year52 = ["COM y SOC", "Econom. Politica", "Geografía", "Historia", "Ingles", "Química", "Literatura", "Matematica", "Pol. y Ciudadanía", "Sociología", "Ed. Fisica"];
+const year53 = ["Arte", "Biología", "C. de la tierra", "Fisica", "Química", "Geografía", "Historia", "Ingles", "Literatura", "Matematica", "Pol. y ciudadanía", "Ed. Fisica"];
+
+const year61 = ["Arte", "Econom. Política", "Filosofía", "Inglés", "Literatura", "Matemática", "Proy. Organizacional", "Trabajo y Ciudadanía", "Ed. Fisica"];
+const year62 = ["Arte",  "Filosofía", "Geografía", "Historia", "Inglés", "Literatura", "Matemática", "Proy. de Invest.", "Trabajo y Ciudadanía","Ed. Fisica"];
+const year63 = ["Amb. y Sociedad", "Biología General", "Filosofía e Historia", "Física", "Inglés", "Literatura", "Matemática", "Química", "Trabajo y Ciudadanía", "Ed. Fisica"];
+
+const year1pages = [0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0];
+const year2pages = [1];
+const year3pages = [1];
+const year41pages = [1];
+const year42pages = [1];
+const year43pages = [1];
+const year51pages = [1];
+const year52pages = [1];
+const year53pages = [1];
+const year61pages = [1];
+const year62pages = [1];
+const year63pages = [1];
 
 
 
@@ -87,12 +103,16 @@ function orientationSelected(_orientation) {
 
 function subjectSelected(_subject){
 	currentSubject = _subject;
+	page = 0;
+	setupContainers();
+	getMaxPageCount();
+	updatePageImage();
 }
 
 function setupButtons(subjects){
 	i = 0;
 	page = 0;
-	console.log(currentYear+"°"+currentOrientation+" accesed");
+	console.log(currentYear+"°"+currentOrientation+" accesed. Subjects count: "+subjects.length);
 	for (;i < 14;i++) {
 		console.log("subject-button"+(i+1)+" accesed");
 		console.log(subjects.length >= i+1);
@@ -159,7 +179,7 @@ function backPressed() {
 			}
 		}
 	}
-		setupContainers();
+	setupContainers();
 }
 
 function changePage(side){
@@ -175,10 +195,54 @@ function changePage(side){
 			page = maxPages-1;
 		}
 	}
-	document.getElementById("page-number").innerText = (page+1)+"/"+maxPages;
 	updatePageImage();
 }	
 	
 function updatePageImage(){
-	document.getElementById("image").src = "years/"+currentYear+currentOrientation+"/"+currentSubject+"/"+page+".png";
+	document.getElementById("page-number").innerText = (page+1)+"/"+maxPages;
+	document.getElementById("image").src = "years/"+currentYear+currentOrientation+"/"+currentSubject+"/"+(page+1)+".png";
+}
+
+function getMaxPageCount(){
+	switch (currentYear+currentOrientation+""){
+		case "10":
+			maxPages = year1pages[currentSubject-1];
+			break;
+		case "20":
+			maxPages = year2pages[currentSubject-1];
+			break;
+		case "30":
+			maxPages = year3pages[currentSubject-1];
+			break;
+			
+		case "41":
+			maxPages = year41pages[currentSubject-1];
+			break;
+		case "42":
+			maxPages = year42pages[currentSubject-1];
+			break;
+		case "43":
+			maxPages = year43pages[currentSubject-1];
+			break;
+		
+		case "51":
+			maxPages = year51pages[currentSubject-1];
+			break;
+		case "52":
+			maxPages = year52pages[currentSubject-1];
+			break;
+		case "53":
+			maxPages = year53pages[currentSubject-1];
+			break;
+		
+		case "61":
+			maxPages = year61pages[currentSubject-1];
+			break;
+		case "62":
+			maxPages = year62pages[currentSubject-1];
+			break;
+		case "63":
+			maxPages = year63pages[currentSubject-1];
+			break;
+	}
 }
