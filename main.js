@@ -93,7 +93,7 @@ function setupButtons(subjects){
 	i = 0;
 	page = 0;
 	console.log(currentYear+"°"+currentOrientation+" accesed");
-	for (;i < 8;i++) {
+	for (;i < 14;i++) {
 		console.log("subject-button"+(i+1)+" accesed");
 		console.log(subjects.length >= i+1);
 		if (subjects.length >= i+1) {
@@ -108,7 +108,7 @@ function setupButtons(subjects){
 	document.getElementById("page-number").innerText = (page+1)+"/"+maxPages;
 }
 
-function setupContainers() { //for single orientation
+function setupContainers() {
 	let result
 	if (currentSubject == 0) {
 		if (currentOrientation == 0 && currentYear > 3){
@@ -130,6 +130,7 @@ function setupContainers() { //for single orientation
 		result = "0001";
 	}
 	console.log("year"+currentYear+" orientation"+currentOrientation+" subject"+currentSubject);
+	numToVisibility("year",result[0])
 	numToVisibility("orientation",result[1])
 	numToVisibility("subjects",result[2])
 	numToVisibility("image-container",result[3])
@@ -175,6 +176,9 @@ function changePage(side){
 		}
 	}
 	document.getElementById("page-number").innerText = (page+1)+"/"+maxPages;
+	updatePageImage();
 }	
 	
-	//page change script functionality later
+function updatePageImage(){
+	document.getElementById("image").src = "years/"+currentYear+currentOrientation+"/"+currentSubject+"/"+page+".png";
+}
