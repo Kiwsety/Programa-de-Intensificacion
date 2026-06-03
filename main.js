@@ -85,8 +85,8 @@ function orientationSelected(_orientation) {
 	setupContainers();
 }
 
-function subjectSeleceted(_subject){
-	currentSubject = _subject
+function subjectSelected(_subject){
+	currentSubject = _subject;
 }
 
 function setupButtons(subjects){
