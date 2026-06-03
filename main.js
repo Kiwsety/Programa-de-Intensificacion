@@ -246,3 +246,6 @@ function getMaxPageCount(){
 			break;
 	}
 }
+
+
+setupContainers();
