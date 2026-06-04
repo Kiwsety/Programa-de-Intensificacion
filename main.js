@@ -4,7 +4,7 @@ const year3 = ["Biologia", "Ciudadania", "Fisicoquimica", "Geografia", "Historia
 
 const year41 = ["Biologia", "Fisica", "Geografia", "Historia", "Ingles", "Literatura", "Matematica", "NCTIX", "SIC", "Sado", "TEO", "Ed. Fisica"];
 const year42 = ["Biologia", "Fisica", "Geografia", "Historia", "Ingles", "Literatura", "Matematica", "NCTIX", "Psicologia", "Sado", "Ed. Fisica"];
-const year43 = ["Biologia", "Fisica", "Geografia", "Historia", "Ingles", "Literatura", "Matematica", "NTIX", "Quimica", "Sado", "Ed. Fisica"];
+const year43 = ["Biologia", "Fisica", "Geografia", "Historia", "Ingles", "Literatura", "Matematica", "NCTIX", "Quimica", "Sado", "Ed. Fisica"];
 
 const year51 = ["Derecho", "Micro y Macro", "Geografía", "GEO", "Historia", "Ingles", "Química", "Literatura", "Matematica", "Pol. y Ciudadanía", "SIC", "Ed. Fisica"];
 const year52 = ["COM y SOC", "Econom. Politica", "Geografía", "Historia", "Ingles", "Química", "Literatura", "Matematica", "Pol. y Ciudadanía", "Sociología", "Ed. Fisica"];
