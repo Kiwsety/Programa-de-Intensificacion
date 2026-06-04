@@ -16,7 +16,7 @@ const year63 = ["Amb. y Sociedad", "Biología General", "Filosofía e Historia",
 
 const year1pages = [6,10,12,10,2,5,2,1,1,8];
 const year2pages = [5,1,2,2,3,3,7,4,1,18,1,11];
-const year3pages = [1];
+const year3pages = [3,1,9,3,3,4,1,2,1,11,14];
 const year41pages = [1];
 const year42pages = [1];
 const year43pages = [1];
