@@ -68,9 +68,12 @@ html {
 	
 	transition: all 0.4s ease;
 }
-
+.image-container {
+	display: flex;
+}
 .image {
 	display: normal;
+	width: 50%;
 }
 
 

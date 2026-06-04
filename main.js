@@ -14,7 +14,7 @@ const year61 = ["Arte", "Econom. Política", "Filosofía", "Inglés", "Literatur
 const year62 = ["Arte",  "Filosofía", "Geografía", "Historia", "Inglés", "Literatura", "Matemática", "Proy. de Invest.", "Trabajo y Ciudadanía","Ed. Fisica"];
 const year63 = ["Amb. y Sociedad", "Biología General", "Filosofía e Historia", "Física", "Inglés", "Literatura", "Matemática", "Química", "Trabajo y Ciudadanía", "Ed. Fisica"];
 
-const year1pages = [0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0];
+const year1pages = [6,10,12,10,2,5,2,1,1,8];
 const year2pages = [1];
 const year3pages = [1];
 const year41pages = [1];
@@ -32,7 +32,7 @@ const year63pages = [1];
 let i;
 let page = 0;
 let currentOrientation = 0;
-let maxPages = 3;
+let maxPages = 1;
 let currentYear = 0;
 let currentSubject = 0;
 
@@ -183,6 +183,7 @@ function backPressed() {
 }
 
 function changePage(side){
+	getMaxPageCount();
 	if (side == 1) {
 		page += 1;
 		if (page >= maxPages) {
@@ -204,7 +205,7 @@ function updatePageImage(){
 }
 
 function getMaxPageCount(){
-	switch (currentYear+currentOrientation+""){
+	switch (currentYear+String(currentOrientation)){
 		case "10":
 			maxPages = year1pages[currentSubject-1];
 			break;
@@ -245,6 +246,7 @@ function getMaxPageCount(){
 			maxPages = year63pages[currentSubject-1];
 			break;
 	}
+	console.log(maxPages+" max pages");
 }
 
 
