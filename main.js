@@ -7,12 +7,12 @@ const year42 = ["Biologia", "Fisica", "Geografia", "Historia", "Ingles", "Litera
 const year43 = ["Biologia", "Fisica", "Geografia", "Historia", "Ingles", "Literatura", "Matematica", "NCTIX", "Quimica", "Sado", "Ed. Fisica"];
 
 const year51 = ["Derecho", "Micro y Macro", "Geografía", "GEO", "Historia", "Ingles", "Química", "Literatura", "Matematica", "Pol. y Ciudadanía", "SIC", "Ed. Fisica"];
-const year52 = ["COM y SOC", "Econom. Politica", "Geografía", "Historia", "Ingles", "Química", "Literatura", "Matematica", "Pol. y Ciudadanía", "Sociología", "Ed. Fisica"];
+const year52 = ["Com. y Soc.", "Econom. Politica", "Geografía", "Historia", "Ingles", "Química", "Literatura", "Matematica", "Pol. y Ciudadanía", "Sociología", "Ed. Fisica"];
 const year53 = ["Arte", "Biología", "C. de la tierra", "Fisica", "Química", "Geografía", "Historia", "Ingles", "Literatura", "Matematica", "Pol. y ciudadanía", "Ed. Fisica"];
 
-const year61 = ["Arte", "Econom. Política", "Filosofía", "Inglés", "Literatura", "Matemática", "Proy. Organizacional", "Trabajo y Ciudadanía", "Ed. Fisica"];
+const year61 = ["Arte", "Econom. Política", "Filosofía", "Inglés", "Literatura", "Matemática", "Proy. Organiz.", "Trabajo y Ciudadanía", "Ed. Fisica"];
 const year62 = ["Arte",  "Filosofía", "Geografía", "Historia", "Inglés", "Literatura", "Matemática", "Proy. de Invest.", "Trabajo y Ciudadanía","Ed. Fisica"];
-const year63 = ["Amb. y Sociedad", "Biología General", "Filosofía e Historia", "Física", "Inglés", "Literatura", "Matemática", "Química", "Trabajo y Ciudadanía", "Ed. Fisica"];
+const year63 = ["Amb. y Soc.", "Biología", "Filos. e Histor.", "Física", "Inglés", "Literatura", "Matemática", "Química", "Trabajo y Ciudadanía", "Ed. Fisica"];
 
 const year1pages = [6,10,12,10,2,5,2,1,1,8];
 const year2pages = [5,1,2,2,3,3,7,4,1,18,1,11];
@@ -20,12 +20,12 @@ const year3pages = [3,1,9,3,3,4,1,2,1,11,14];
 const year41pages = [0,2,0,0,6,2,4,2,7];
 const year42pages = [3,2,25,3,0,1,2,2,6];
 const year43pages = [0,0,25,0,10,1,2];
-const year51pages = [1];
-const year52pages = [1];
-const year53pages = [1];
-const year61pages = [1];
-const year62pages = [1];
-const year63pages = [1];
+const year51pages = [0,2,6,3,10,1,1,2,17,2,7];
+const year52pages = [0,3,26,0,10,1,1,3,53,8,7];
+const year53pages = [4,0,25,2,0,2,10,2,35,7];
+const year61pages = [16,1,4,5,1,5,3,5,2];
+const year62pages = [0,4,6,0,5,3,6,0,0,2];
+const year63pages = [0,4,5,0,5,1,0,6,5,2];
 
 
 
