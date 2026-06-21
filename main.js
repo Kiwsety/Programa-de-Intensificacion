@@ -15,7 +15,7 @@ const year62 = ["Arte",  "Filosofía", "Geografía", "Historia", "Inglés", "Lit
 const year63 = ["Amb. y Soc.", "Biología", "Filos. e Histor.", "Física", "Inglés", "Literatura", "Matemática", "Química", "Trabajo y Ciudadanía", "Ed. Fisica"];
 
 const year1pages = [6,10,12,10,2,5,5,1,9,8];
-const year2pages = [5,1,2,3,3,3,7,4,1,18,9,11];
+const year2pages = [5,2,2,3,3,3,7,4,1,18,9,11];
 const year3pages = [3,1,9,3,3,4,1,2,1,11,14];
 const year41pages = [0,2,0,0,6,2,4,2,7,0,2];
 const year42pages = [3,2,25,3,0,1,2,2,6];
